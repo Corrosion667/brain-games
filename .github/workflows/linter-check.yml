@@ -4,7 +4,6 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies and check with linter
       - run: pip install poetry
       - run: make install
       - run: make lint
