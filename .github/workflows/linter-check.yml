@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies and do linter check
-      run: |
-        pip install poetry
-        make install
-        make init
+        run: |
+          pip install poetry
+          make install
+          make init
 
 
