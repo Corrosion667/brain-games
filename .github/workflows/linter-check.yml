@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies and check with linter
-        run: |
-          pip install poetry
-          make install
-          make lint
+              run: |
+                pip install poetry
+                make install
+                make lint
       
