@@ -1,1 +1,1 @@
-"""This is a main working package of the project."""
+"""This is a main working package of the project"""
