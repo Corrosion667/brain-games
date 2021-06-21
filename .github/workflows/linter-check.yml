@@ -1,14 +1,8 @@
 name: linter-check
 
-on:
-  push:
-    branches:
-      - '**'
-    tags:
-      - '**'
+on: [push]
 
 jobs:
-  build:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies and check with linter
