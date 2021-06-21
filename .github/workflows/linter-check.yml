@@ -11,10 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies and do linter check
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - name: updating dpendencies and do linter check
         run: |
           pip install poetry
           make install
-          make init
-
-
+          make lint
