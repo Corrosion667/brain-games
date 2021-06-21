@@ -1,10 +1,10 @@
 name: linter-check
 on: [push]
 runs-on: ubuntu-latest
-  steps:
-    - name: Install dependencies and check with linter
-      run: |
-        pip install poetry
-        make install
-        make lint
+steps:
+  - name: Install dependencies and check with linter
+    run: |
+      pip install poetry
+      make install
+      make lint
       
