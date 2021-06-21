@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install poetry
+      - run: python3 -m pip install --user dist/*.whl
       - run: poetry install
       - run: make lint
       
