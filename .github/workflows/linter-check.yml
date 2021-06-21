@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install poetry
-      - run: make install
+      - run: poetry install
       - run: make lint
       
