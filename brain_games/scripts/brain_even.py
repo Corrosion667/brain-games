@@ -5,12 +5,12 @@ import random
 
 import prompt
 
+from brain_games.cli import welcome_user
+
 
 def main():
     """Execute a mini-game."""
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     attempt = 1
     while attempt <= 3:
