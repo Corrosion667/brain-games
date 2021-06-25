@@ -4,7 +4,6 @@
 import random
 
 import prompt
-
 from brain_games.cli import welcome_user
 
 
@@ -22,7 +21,9 @@ def main():
             print(
                 "'{0}' is wrong answer ;(."
                 "Correct answer was '{1}'.\n"
-                "Let's try again, {2}!".format(users_answer, right_answer, name)
+                "Let's try again, {2}!".format(
+                    users_answer, right_answer, name,
+                ),
             )
             break
         elif right_answer == users_answer:
