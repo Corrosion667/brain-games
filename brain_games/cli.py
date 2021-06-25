@@ -4,6 +4,7 @@ import prompt
 
 
 def welcome_user():
-    """Ask user's name and use it."""
+    """Return name after asking it and greeting the user."""
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
+    return name
