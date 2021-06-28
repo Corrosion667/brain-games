@@ -17,3 +17,7 @@ The video shows demonstration of installing brain-even game, its launch, winning
 ### Asciinema demonstarion brain-calc:
 The video shows demonstration of brain-calc game: its launch, winning and loosing.
 [![asciicast](https://asciinema.org/a/lUwxnouChgGCPpgvOqiMeNFBg.svg)](https://asciinema.org/a/lUwxnouChgGCPpgvOqiMeNFBg)
+
+### Asciinema demonstarion brain-gcd:
+The video shows demonstration of brain-gcd game: its launch, winning and loosing.
+[![asciicast](https://asciinema.org/a/PJXwkA8hWpgyqwwiDy86je8nc.svg)](https://asciinema.org/a/PJXwkA8hWpgyqwwiDy86je8nc)
