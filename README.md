@@ -21,3 +21,7 @@ The video shows demonstration of brain-calc game: its launch, winning and loosin
 ### Asciinema demonstarion brain-gcd:
 The video shows demonstration of brain-gcd game: its launch, winning and loosing.
 [![asciicast](https://asciinema.org/a/PJXwkA8hWpgyqwwiDy86je8nc.svg)](https://asciinema.org/a/PJXwkA8hWpgyqwwiDy86je8nc)
+
+### Asciinema demonstarion brain-progression:
+The video shows demonstration of brain-progression game: its launch, winning and loosing.
+[![asciicast](https://asciinema.org/a/ZngYsKIdxSXAinQkeIRHBEmdR.svg)](https://asciinema.org/a/ZngYsKIdxSXAinQkeIRHBEmdR)
