@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""It's a mini-game where user have to execute some simple math operations."""
+"""It's a mini-game where user have to answer whether number is even or not."""
 
+import math
 import random
 
 import prompt
@@ -10,22 +11,15 @@ from brain_games.cli import welcome_user
 def main():
     """Execute a mini-game."""
     name = welcome_user()
-    print('What is the result of the expression?.')
-    operands = ['+', '-', '*']
+    print('Find the greatest common divisor of given numbers.')
     attempt = 1
     while attempt <= 3:
-        action = random.choice(operands)
-        reasonable_limit_of_mental_computation = 20
+        reasonable_limit_of_mental_computation = 50
         num1 = random.randint(0, reasonable_limit_of_mental_computation)
         num2 = random.randint(0, reasonable_limit_of_mental_computation)
-        print('Question: {0} {1} {2}'.format(str(num1), action, str(num2)))
-        if action == '+':
-            right_answer = num1 + num2
-        elif action == '-':
-            right_answer = num1 - num2
-        else:
-            right_answer = num1 * num2
+        print('Question: {0} {1}'.format(str(num1), str(num2)))
         users_answer = prompt.string('Your answer: ')
+        right_answer = math.gcd(num1, num2)
         if str(right_answer) != users_answer:
             print(
                 "'{0}' is wrong answer ;(."
