@@ -15,8 +15,9 @@ def main():
     attempt = 1
     while attempt <= 3:
         action = random.choice(operands)
-        num1 = random.randint(0, 20)
-        num2 = random.randint(0, 20)
+        reasonable_limit_of_mental_computation = 20
+        num1 = random.randint(0, reasonable_limit_of_mental_computation)
+        num2 = random.randint(0, reasonable_limit_of_mental_computation)
         print('Question: {0} {1} {2}'.format(str(num1), action, str(num2)))
         if action == '+':
             right_answer = num1 + num2
