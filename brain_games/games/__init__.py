@@ -1,1 +1,1 @@
-"""This is a package with different scipts for brain games."""
+"""This is a package with games for the corresponding scripts."""

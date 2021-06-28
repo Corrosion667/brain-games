@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""It's a mini-game where user have to answer whether number is even or not."""
+"""It's a mini-game where user have to find greatest common divisor ."""
 
 import math
 import random
