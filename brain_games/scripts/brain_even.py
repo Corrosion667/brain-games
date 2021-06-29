@@ -7,6 +7,7 @@ from brain_games.games.even_game import play_even
 
 def main():
     """Execute a mini-game."""
+    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     play_even(name)

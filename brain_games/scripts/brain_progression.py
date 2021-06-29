@@ -7,6 +7,7 @@ from brain_games.games.progression_game import play_progression
 
 def main():
     """Execute a mini-game."""
+    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('What number is missing in the progression?')
     play_progression(name)

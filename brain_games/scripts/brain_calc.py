@@ -7,6 +7,7 @@ from brain_games.games.calc_game import play_calc
 
 def main():
     """Execute a mini-game."""
+    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('What is the result of the expression?.')
     play_calc(name)
