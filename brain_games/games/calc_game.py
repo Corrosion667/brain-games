@@ -30,7 +30,7 @@ def answer(operand, num1, num2):
 
 
 def play_calc(name):  # noqa: WPS210
-    """Cycle for the brain-even script.
+    """Cycle for the brain-calc script.
 
     Args:
         name: Name of an user.
