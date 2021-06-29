@@ -16,16 +16,16 @@ The video demonstrates installing brain-even game, its launch, winning and loosi
 
 ### Asciinema demonstarion brain-calc:
 The video demonstrates brain-calc game: its launch, winning and loosing.
-[![asciicast](https://asciinema.org/a/lUwxnouChgGCPpgvOqiMeNFBg.svg)](https://asciinema.org/a/lUwxnouChgGCPpgvOqiMeNFBg)
+[![asciicast](https://asciinema.org/a/p7dInmOwt4SSdAW6TPr4u3BUc.svg)](https://asciinema.org/a/p7dInmOwt4SSdAW6TPr4u3BUc)
 
 ### Asciinema demonstarion brain-gcd:
 The video demonstrates brain-gcd game: its launch, winning and loosing.
-[![asciicast](https://asciinema.org/a/PJXwkA8hWpgyqwwiDy86je8nc.svg)](https://asciinema.org/a/PJXwkA8hWpgyqwwiDy86je8nc)
+[![asciicast](https://asciinema.org/a/s1o9Sh0k4hNlcqBvaXiKKbBgd.svg)](https://asciinema.org/a/s1o9Sh0k4hNlcqBvaXiKKbBgd)
 
 ### Asciinema demonstarion brain-progression:
 The video demonstrates brain-progression game: its launch, winning and loosing.
-[![asciicast](https://asciinema.org/a/ZngYsKIdxSXAinQkeIRHBEmdR.svg)](https://asciinema.org/a/ZngYsKIdxSXAinQkeIRHBEmdR)
+[![asciicast](https://asciinema.org/a/LO3YCXgU661w6UYTn7EptRzjB.svg)](https://asciinema.org/a/LO3YCXgU661w6UYTn7EptRzjB)
 
 ### Asciinema demonstarion brain-prime:
 The video demonstrates brain-prime game: its launch, winning and loosing.
-[![asciicast](https://asciinema.org/a/sVFkq6QLkXeBwMdYZvLStbtA8.svg)](https://asciinema.org/a/sVFkq6QLkXeBwMdYZvLStbtA8)
+[![asciicast](https://asciinema.org/a/QjZhNkXdQDAa344GQpLb6DOdy.svg)](https://asciinema.org/a/QjZhNkXdQDAa344GQpLb6DOdy)
