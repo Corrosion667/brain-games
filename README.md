@@ -25,3 +25,7 @@ The video demonstrates brain-gcd game: its launch, winning and loosing.
 ### Asciinema demonstarion brain-progression:
 The video demonstrates brain-progression game: its launch, winning and loosing.
 [![asciicast](https://asciinema.org/a/ZngYsKIdxSXAinQkeIRHBEmdR.svg)](https://asciinema.org/a/ZngYsKIdxSXAinQkeIRHBEmdR)
+
+### Asciinema demonstarion brain-prime:
+The video demonstrates brain-prime game: its launch, winning and loosing.
+[![asciicast](https://asciinema.org/a/sVFkq6QLkXeBwMdYZvLStbtA8.svg)](https://asciinema.org/a/sVFkq6QLkXeBwMdYZvLStbtA8)
