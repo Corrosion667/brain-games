@@ -12,8 +12,9 @@ def main():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     attempt = 1
+    reasonable_limit_of_mental_computation = 100
     while attempt <= 3:
-        task = random.randint(0, 100)
+        task = random.randint(0, reasonable_limit_of_mental_computation)
         right_answer = 'yes' if task % 2 == 0 else 'no'
         print('Question: {0}'.format(str(task)))
         users_answer = prompt.string('Your answer: ')

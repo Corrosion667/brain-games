@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""It's a mini-game where user have to find greatest common divisor ."""
+"""It's a mini-game where user have to answer whether number is prime or not."""
 
-import math
 import random
 
 import prompt
@@ -11,16 +10,19 @@ from brain_games.cli import welcome_user
 def main():
     """Execute a mini-game."""
     name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     attempt = 1
     reasonable_limit_of_mental_computation = 50
     while attempt <= 3:
-        num1 = random.randint(0, reasonable_limit_of_mental_computation)
-        num2 = random.randint(0, reasonable_limit_of_mental_computation)
-        print('Question: {0} {1}'.format(str(num1), str(num2)))
+        task = random.randint(2, reasonable_limit_of_mental_computation)
+        print('Question: {0}'.format(str(task)))
+        check = []
+        for each in range(1, task + 1):
+            if task % each == 0:
+                check.append(each)
+        right_answer = 'yes' if len(check) == 2 else 'no'
         users_answer = prompt.string('Your answer: ')
-        right_answer = math.gcd(num1, num2)
-        if str(right_answer) != users_answer:
+        if right_answer != users_answer:
             print(
                 "'{0}' is wrong answer ;(."
                 "Correct answer was '{1}'.\n"

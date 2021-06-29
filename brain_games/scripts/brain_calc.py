@@ -13,9 +13,9 @@ def main():
     print('What is the result of the expression?.')
     operands = ['+', '-', '*']
     attempt = 1
+    reasonable_limit_of_mental_computation = 20
     while attempt <= 3:
         action = random.choice(operands)
-        reasonable_limit_of_mental_computation = 20
         num1 = random.randint(0, reasonable_limit_of_mental_computation)
         num2 = random.randint(0, reasonable_limit_of_mental_computation)
         print('Question: {0} {1} {2}'.format(str(num1), action, str(num2)))
