@@ -5,8 +5,8 @@ import random
 import prompt
 from brain_games.cli import check_answer
 
-operands = ['+', '-', '*']
-reasonable_limit_of_mental_computation = 20
+OPERANDS = ('+', '-', '*')
+REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 20
 
 
 def answer(operand, num1, num2):
@@ -36,9 +36,9 @@ def play_calc(name):  # noqa: WPS210
         name: Name of an user.
     """
     for attempt in range(1, 4):
-        operand = random.choice(operands)
-        num1 = random.randint(0, reasonable_limit_of_mental_computation)
-        num2 = random.randint(0, reasonable_limit_of_mental_computation)
+        operand = random.choice(OPERANDS)
+        num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+        num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
         print('Question: {0} {1} {2}'.format(str(num1), operand, str(num2)))
         right_answer = answer(operand, num1, num2)
         users_answer = prompt.string('Your answer: ')

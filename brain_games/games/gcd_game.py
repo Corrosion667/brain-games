@@ -5,7 +5,7 @@ import random
 import prompt
 from brain_games.cli import check_answer
 
-reasonable_limit_of_mental_computation = 50
+REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
 
 
 def gcd(num1, num2):
@@ -39,8 +39,8 @@ def play_gcd(name):  # noqa: WPS210
         name: Name of an user.
     """
     for attempt in range(1, 4):
-        num1 = random.randint(0, reasonable_limit_of_mental_computation)
-        num2 = random.randint(0, reasonable_limit_of_mental_computation)
+        num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+        num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
         print('Question: {0} {1}'.format(str(num1), str(num2)))
         users_answer = prompt.string('Your answer: ')
         right_answer = gcd(num1, num2)

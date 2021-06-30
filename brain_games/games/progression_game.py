@@ -5,9 +5,9 @@ import random
 import prompt
 from brain_games.cli import check_answer
 
-max_length = 10
-max_step = 10
-max_start = 20
+MAX_LENGTH = 10
+MAX_STEP = 10
+MAX_START = 20
 
 
 def make_prog(prog_start, prog_length, prog_step, prog_substitute):
@@ -40,9 +40,9 @@ def play_progression(name):  # noqa: WPS210
         name: Name of an user.
     """
     for attempt in range(1, 4):
-        prog_length = random.randint(5, max_length)
-        prog_step = random.randint(1, max_step)
-        prog_start = random.randint(0, max_start)
+        prog_length = random.randint(5, MAX_LENGTH)
+        prog_step = random.randint(1, MAX_STEP)
+        prog_start = random.randint(0, MAX_START)
         prog_substitute = random.randint(0, prog_length - 1)
         progression = make_prog(
             prog_start, prog_length, prog_step, prog_substitute,

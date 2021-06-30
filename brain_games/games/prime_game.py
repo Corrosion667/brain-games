@@ -5,7 +5,7 @@ import random
 import prompt
 from brain_games.cli import check_answer
 
-reasonable_limit_of_mental_computation = 50
+REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
 
 
 def check_prime(task):
@@ -32,7 +32,7 @@ def play_prime(name):
         name: Name of an user.
     """
     for attempt in range(1, 4):
-        task = random.randint(2, reasonable_limit_of_mental_computation)
+        task = random.randint(2, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
         print('Question: {0}'.format(str(task)))
         right_answer = check_prime(task)
         users_answer = prompt.string('Your answer: ')
