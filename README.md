@@ -6,6 +6,16 @@
 
 ---
 
+Welcome to the repotistory with a set of five console games built on the principle of popular mobile brain training applications.
+
+|       Game        |                      Goal                     |
+|-------------------|-----------------------------------------------|
+|`brain-even   `    | answer whether number is even or not          |       
+|`brain-calc`       | execute some simple math operations: +, - or *|      
+|`brain-gcd`        | find greatest common divisor for two numbers  |
+|`brain-prime`      | answer whether number is prime or not         |
+|`brain-progression`| guess hidden element of arithmetic progression| 
+
 ### Asciinema demonstarion brain-even:
 The video demonstrates installing brain-even game, its launch, winning and loosing.
 [![asciicast](https://asciinema.org/a/HHUWw21Ng85MslnAC3nU3yKBZ.svg)](https://asciinema.org/a/HHUWw21Ng85MslnAC3nU3yKBZ)
