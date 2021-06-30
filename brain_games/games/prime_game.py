@@ -8,7 +8,7 @@ from brain_games.cli import check_answer
 reasonable_limit_of_mental_computation = 50
 
 
-def check(task):
+def check_prime(task):
     """Define wheter the number prime or not.
 
     Args:
@@ -34,7 +34,7 @@ def play_prime(name):
     for attempt in range(1, 4):
         task = random.randint(2, reasonable_limit_of_mental_computation)
         print('Question: {0}'.format(str(task)))
-        right_answer = check(task)
+        right_answer = check_prime(task)
         users_answer = prompt.string('Your answer: ')
         scenario = check_answer(users_answer, right_answer, name, attempt)
         if scenario == 'loose':
