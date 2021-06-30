@@ -12,8 +12,8 @@ def gcd(num1, num2):
     """Find the greatest common divider for two numbers.
 
     Args:
-        num1: First randomised number.
-        num2: Second randomised number.
+        num1: First number.
+        num2: Second number.
 
     Returns:
         The greatest common divider for num1 and num2.
