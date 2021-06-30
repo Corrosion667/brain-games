@@ -1,12 +1,35 @@
 """It's a library of functions and variables for brain-gcd script."""
 
-import math
 import random
 
 import prompt
 from brain_games.cli import check_answer
 
 reasonable_limit_of_mental_computation = 50
+
+
+def gcd(num1, num2):
+    """Find the greatest common divider for two numbers.
+
+    Args:
+        num1: First randomised number.
+        num2: Second randomised number.
+
+    Returns:
+        The greatest common divider for num1 and num2.
+    """
+    if num1 == 0:
+        return num2
+    if num2 == 0:
+        return num1
+    if num1 == num2:
+        return num1
+    while num1 != 0 and num2 != 0:
+        if num1 > num2:
+            num1 = num1 % num2  # noqa: WPS350
+        else:
+            num2 = num2 % num1  # noqa: WPS350
+    return (num1 + num2)
 
 
 def play_gcd(name):  # noqa: WPS210
@@ -20,7 +43,7 @@ def play_gcd(name):  # noqa: WPS210
         num2 = random.randint(0, reasonable_limit_of_mental_computation)
         print('Question: {0} {1}'.format(str(num1), str(num2)))
         users_answer = prompt.string('Your answer: ')
-        right_answer = math.gcd(num1, num2)
+        right_answer = gcd(num1, num2)
         scenario = check_answer(users_answer, right_answer, name, attempt)
         if scenario == 'loose':
             break
