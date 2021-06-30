@@ -22,15 +22,13 @@ def make_prog(prog_start, prog_length, prog_step, prog_substitute):
     Returns:
         Made progression.
     """
-    progression = ''
+    progression = []
     for element in range(prog_length):
-        if progression != '':
-            progression += ' '  # noqa: WPS336
         if element == prog_substitute:
-            progression += '..'  # noqa: WPS336
+            progression.append('..')
             continue
-        progression += str(prog_start + element * prog_step)
-    return progression
+        progression.append(str(prog_start + element * prog_step))
+    return ' '.join(progression)
 
 
 def play_progression(name):  # noqa: WPS210
