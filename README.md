@@ -40,7 +40,7 @@ brain-progression
 You can also use `brain-games` to only see the greeting.
 
 
-## Asciinema demonstarions
+## Asciinema demonstrations
 
 Installing the whole package. Then launching, winning and loosing **brain-even** game.
 
