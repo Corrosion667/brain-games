@@ -1,4 +1,4 @@
-### Brain games
+# Brain games
 [![Actions Status](https://github.com/Corrosion667/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Corrosion667/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/Corrosion667/python-project-lvl1)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
@@ -18,12 +18,24 @@ Welcome to the repotistory with a set of five console games built on the princip
 
 ---
 
-### Quickstart
+## Quickstart
 
 ```bash
-pip install git+HTTPSwemake-python-styleguide
+pip install git+HTTPS
 ```
 ---
+
+## Running
+
+The programm supports five scripts to play a certain game:
+```bash
+brain-even
+brain-calc
+brain-gcd
+brain-prime
+brain-progression
+```
+You can also use `brain-games`to only see the greeting.
 
 ### Asciinema demonstarion brain-even:
 The video demonstrates installing brain-even game, its launch, winning and loosing.
