@@ -16,14 +16,14 @@ Welcome to the repotistory with a set of five console games built on the princip
 |`brain-prime`      | answer whether number is prime or not         |
 |`brain-progression`| guess hidden element of arithmetic progression| 
 
----
+*To win the game you have to successfully finish three round in a row.*
+
 
 ## Quickstart
 
 ```bash
 pip install git+HTTPS
 ```
----
 
 ## Running
 
@@ -35,9 +35,10 @@ brain-gcd
 brain-prime
 brain-progression
 ```
-You can also use `brain-games`to only see the greeting.
+You can also use `brain-games` to only see the greeting.
 
-### Asciinema demonstarion brain-even:
+
+## Asciinema demonstarions
 The video demonstrates installing brain-even game, its launch, winning and loosing.
 [![asciicast](https://asciinema.org/a/HHUWw21Ng85MslnAC3nU3yKBZ.svg)](https://asciinema.org/a/HHUWw21Ng85MslnAC3nU3yKBZ)
 
