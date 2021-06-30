@@ -22,6 +22,7 @@ Welcome to the repository with a set of five console games built on the principl
 
 ## Quickstart
 
+**Brain games** at the moment are stored only at *github* so the quickest and the easiest way to install them is it use *pip* with URL of repository.
 ```bash
 pip install git+HTTPS
 ```
