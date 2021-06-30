@@ -16,6 +16,15 @@ Welcome to the repotistory with a set of five console games built on the princip
 |`brain-prime`      | answer whether number is prime or not         |
 |`brain-progression`| guess hidden element of arithmetic progression| 
 
+---
+
+### Quickstart
+
+```bash
+pip install git+HTTPSwemake-python-styleguide
+```
+---
+
 ### Asciinema demonstarion brain-even:
 The video demonstrates installing brain-even game, its launch, winning and loosing.
 [![asciicast](https://asciinema.org/a/HHUWw21Ng85MslnAC3nU3yKBZ.svg)](https://asciinema.org/a/HHUWw21Ng85MslnAC3nU3yKBZ)
