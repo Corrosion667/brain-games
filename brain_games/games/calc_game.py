@@ -19,14 +19,17 @@ def answer(operand, num1, num2):
 
     Returns:
         The right answer for the game.
+
+    Raises:
+        ValueError: if operand is unsupported.
     """
     if operand == '+':
-        right_answer = num1 + num2
+        return (num1 + num2)
     elif operand == '-':
-        right_answer = num1 - num2
-    else:
-        right_answer = num1 * num2
-    return right_answer
+        return (num1 - num2)
+    elif operand == '*':
+        return (num1 * num2)
+    raise ValueError('unsupported operand')
 
 
 def play_calc(name):  # noqa: WPS210
