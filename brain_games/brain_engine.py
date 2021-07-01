@@ -57,7 +57,7 @@ def common_game(game_goal, game_iteration):
 
     Args:
         game_goal: playing condition of a certain game.
-        game_iteration: Determine question and correcrt answer during the game.
+        game_iteration: Determine question and correct answer during the game.
     """
     print('Welcome to the Brain Games!')
     name = welcome_user()
