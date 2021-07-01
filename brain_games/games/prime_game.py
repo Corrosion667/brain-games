@@ -20,6 +20,8 @@ def check_prime(task):
     """
     if task <= 2:
         return 'no'
+    if task == 2:
+        return 'yes'
     for each in range(2, task):
         if task % each == 0:
             return 'no'
