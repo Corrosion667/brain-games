@@ -1,4 +1,4 @@
-"""Command line interface for brain-games common for every game."""
+"""Command line interface for brain-games."""
 
 import prompt
 
