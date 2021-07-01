@@ -37,7 +37,7 @@ def check_answer(users_answer, right_answer, name, attempt):
     Args:
         users_answer: An answer given by user.
         right_answer: An answer which is meant to be correct.
-        name: Name of an user.
+        name: Name of the user.
         attempt: Number of current round in the game.
 
     Returns:
@@ -57,7 +57,7 @@ def common_game(game_goal, game_iteration):
 
     Args:
         game_goal: playing condition of a certain game.
-        game_iteration: Determine guestion and correcrt answer during the game.
+        game_iteration: Determine question and correcrt answer during the game.
     """
     print('Welcome to the Brain Games!')
     name = welcome_user()
