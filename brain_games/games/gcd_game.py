@@ -2,10 +2,11 @@
 
 import random
 
-import prompt
-from brain_games.cli import check_answer
+from brain_games.brain_engine import common_game
 
 REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
+
+game_goal = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(num1, num2):
@@ -32,18 +33,18 @@ def gcd(num1, num2):
     return (num1 + num2)
 
 
-def play_gcd(name):  # noqa: WPS210
-    """Cycle for the brain-gcd script.
+def game_iteration():
+    """Game logic: question and right answer for the game.
 
-    Args:
-        name: Name of an user.
+    Returns:
+        Right answer for game.
     """
-    for attempt in range(1, 4):
-        num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
-        num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
-        print('Question: {0} {1}'.format(str(num1), str(num2)))
-        users_answer = prompt.string('Your answer: ')
-        right_answer = gcd(num1, num2)
-        scenario = check_answer(users_answer, right_answer, name, attempt)
-        if scenario == 'loose':
-            break
+    num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+    num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+    print('Question: {0} {1}'.format(str(num1), str(num2)))
+    return gcd(num1, num2)
+
+
+def play_gcd():
+    """Program for the brain-gcd script."""
+    common_game(game_goal, game_iteration)
