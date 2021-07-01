@@ -2,12 +2,13 @@
 
 import random
 
-import prompt
-from brain_games.cli import check_answer
+from brain_games.brain_engine import common_game
 
 MAX_LENGTH = 10
 MAX_STEP = 10
 MAX_START = 20
+
+game_goal = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def make_prog(prog_start, prog_length, prog_step, prog_substitute):
@@ -31,23 +32,23 @@ def make_prog(prog_start, prog_length, prog_step, prog_substitute):
     return ' '.join(progression)
 
 
-def play_progression(name):  # noqa: WPS210
-    """Cycle for the brain-prime script.
+def game_iteration():
+    """Game logic: question and right answer for the game.
 
-    Args:
-        name: Name of an user.
+    Returns:
+        Right answer for game.
     """
-    for attempt in range(1, 4):
-        prog_length = random.randint(5, MAX_LENGTH)
-        prog_step = random.randint(1, MAX_STEP)
-        prog_start = random.randint(0, MAX_START)
-        prog_substitute = random.randint(0, prog_length - 1)
-        progression = make_prog(
-            prog_start, prog_length, prog_step, prog_substitute,
-        )
-        print('Question: {0}'.format(progression))
-        users_answer = prompt.string('Your answer: ')
-        right_answer = (prog_start + prog_substitute * prog_step)
-        scenario = check_answer(users_answer, right_answer, name, attempt)
-        if scenario == 'loose':
-            break
+    prog_length = random.randint(5, MAX_LENGTH)
+    prog_step = random.randint(1, MAX_STEP)
+    prog_start = random.randint(0, MAX_START)
+    prog_substitute = random.randint(0, prog_length - 1)
+    progression = make_prog(
+        prog_start, prog_length, prog_step, prog_substitute,
+    )
+    print('Question: {0}'.format(progression))
+    return (prog_start + prog_substitute * prog_step)
+
+
+def play_progression():
+    """Program for the brain-progression script."""
+    common_game(game_goal, game_iteration)
