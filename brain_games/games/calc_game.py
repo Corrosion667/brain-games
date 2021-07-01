@@ -16,7 +16,7 @@ def answer(operand, num1, num2):
     Args:
         operand: Randomised one from operands list.
         num1: First randomised number in game.
-        num2: second randomise number in game.
+        num2: Second randomised number in game.
 
     Returns:
         The right answer for the game.
