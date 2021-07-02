@@ -18,7 +18,7 @@ def check_prime(task):
     Returns:
         Answer whether number prime or not.
     """
-    if task <= 2:
+    if task < 2:
         return 'no'
     if task == 2:
         return 'yes'
