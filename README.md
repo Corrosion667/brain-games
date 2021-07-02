@@ -17,7 +17,7 @@ Welcome to the repository with a set of five console games built on the principl
 |`brain-prime`      | answer whether number is prime or not         |
 |`brain-progression`| guess hidden element of arithmetic progression| 
 
-*To win the game you have to successfully finish three round in a row.*
+*To win the game you have to successfully finish three rounds in a row.*
 
 
 ## Quickstart
