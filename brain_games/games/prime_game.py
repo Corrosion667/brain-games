@@ -10,7 +10,7 @@ game_goal = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_prime(task):
-    """Define wheter the number prime or not.
+    """Define whether the number prime or not.
 
     Args:
         task: Number for guessing by user.
