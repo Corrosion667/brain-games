@@ -6,7 +6,7 @@ from brain_games.brain_engine import common_game
 
 REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
 
-game_goal = 'Find the greatest common divisor of given numbers.'
+GAME_GOAL = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(num1, num2):
@@ -47,4 +47,4 @@ def game_iteration():
 
 def play_gcd():
     """Program for the brain-gcd script."""
-    common_game(game_goal, game_iteration)
+    common_game(GAME_GOAL, game_iteration)
