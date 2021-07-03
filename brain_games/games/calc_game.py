@@ -8,7 +8,7 @@ MAX_RANDOM_NUMBER = 20
 GAME_GOAL = 'What is the result of the expression?.'
 
 
-def answer(operator, num1, num2):
+def find_answer(operator, num1, num2):
     """Calculate the right answer depending on the randomised operand.
 
     Args:
@@ -31,8 +31,8 @@ def answer(operator, num1, num2):
     raise ValueError('unsupported operand')
 
 
-def game_iteration():
-    """Game logic: question and right answer for the game.
+def iterate():
+    """Game logic for cycle: question and right answer for the game.
 
     Returns:
         Right answer for game.
@@ -41,4 +41,4 @@ def game_iteration():
     num1 = random.randint(0, MAX_RANDOM_NUMBER)
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0} {1} {2}'.format(str(num1), operator, str(num2)))
-    return answer(operator, num1, num2)
+    return find_answer(operator, num1, num2)
