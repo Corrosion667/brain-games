@@ -2,7 +2,7 @@
 
 import random
 
-from brain_games.brain_engine import common_game
+from brain_games.brain_engine import play_game
 
 MAX_LENGTH = 10
 MAX_STEP = 10
@@ -32,8 +32,8 @@ def make_prog(start, length, step, index_missing):
     return ' '.join(progression)
 
 
-def game_iteration():
-    """Game logic: question and right answer for the game.
+def iterate():
+    """Game logic for cycle: question and right answer for the game.
 
     Returns:
         Right answer for game.
@@ -51,4 +51,4 @@ def game_iteration():
 
 def play_progression():
     """Program for the brain-progression script."""
-    common_game(GAME_GOAL, game_iteration)
+    play_game(GAME_GOAL, iterate)
