@@ -4,7 +4,7 @@ import random
 
 from brain_games.brain_engine import common_game
 
-REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
+MAX_RANDOM_NUMBER = 50
 
 GAME_GOAL = 'Find the greatest common divisor of given numbers.'
 
@@ -39,8 +39,8 @@ def game_iteration():
     Returns:
         Right answer for game.
     """
-    num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
-    num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+    num1 = random.randint(0, MAX_RANDOM_NUMBER)
+    num2 = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0} {1}'.format(str(num1), str(num2)))
     return gcd(num1, num2)
 
