@@ -4,7 +4,7 @@ import random
 
 from brain_games.brain_engine import common_game
 
-REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
+MAX_RANDOM_NUMBER = 50
 
 GAME_GOAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
@@ -34,7 +34,7 @@ def game_iteration():
     Returns:
         Right answer for game.
     """
-    task = random.randint(2, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+    task = random.randint(2, MAX_RANDOM_NUMBER)
     print('Question: {0}'.format(str(task)))
     return check_prime(task)
 
