@@ -5,7 +5,7 @@ import random
 from brain_games.brain_engine import common_game
 
 OPERATORS = ('+', '-', '*')
-REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 20
+MAX_RANDOM_NUMBER = 20
 
 GAME_GOAL = 'What is the result of the expression?.'
 
@@ -40,8 +40,8 @@ def game_iteration():
         Right answer for game.
     """
     operator = random.choice(OPERATORS)
-    num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
-    num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
+    num1 = random.randint(0, MAX_RANDOM_NUMBER)
+    num2 = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0} {1} {2}'.format(str(num1), operator, str(num2)))
     return answer(operator, num1, num2)
 
