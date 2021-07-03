@@ -2,24 +2,24 @@
 
 import random
 
-from brain_games.brain_engine import common_game
+from brain_games.brain_engine import play_game
 
 MAX_RANDOM_NUMBER = 100
 
 GAME_GOAL = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def game_iteration():
-    """Game logic: question and right answer for the game.
+def iterate():
+    """Game logic for cycle: question and right answer for the game.
 
     Returns:
         Right answer for game.
     """
-    task = random.randint(0, MAX_RANDOM_NUMBER)
-    print('Question: {0}'.format(str(task)))
-    return 'yes' if task % 2 == 0 else 'no'
+    number = random.randint(0, MAX_RANDOM_NUMBER)
+    print('Question: {0}'.format(str(number)))
+    return 'yes' if number % 2 == 0 else 'no'
 
 
 def play_even():
     """Program for the brain-even script."""
-    common_game(GAME_GOAL, game_iteration)
+    play_game(GAME_GOAL, iterate)
