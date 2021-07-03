@@ -8,27 +8,27 @@ MAX_LENGTH = 10
 MAX_STEP = 10
 MAX_START = 20
 
-GAME_GOAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_GOAL = 'What number is missing in the progression?'
 
 
-def make_prog(prog_start, prog_length, prog_step, prog_substitute):
+def make_prog(start, length, step, index_missing):
     """Create and return a progression to be guessed.
 
     Args:
-        prog_start: Starting element of progression.
-        prog_length: Length of progression.
-        prog_step: How much the next element is larger than the previous.
-        prog_substitute: Number of element to be hidden.
+        start: Starting element of progression.
+        length: Length of progression.
+        step: How much the next element is larger than the previous.
+        index_missing: Element of progression to be hidden and guessed.
 
     Returns:
         Made progression.
     """
     progression = []
-    for element in range(prog_length):
-        if element == prog_substitute:
+    for element in range(length):
+        if element == index_missing:
             progression.append('..')
             continue
-        progression.append(str(prog_start + element * prog_step))
+        progression.append(str(start + element * step))
     return ' '.join(progression)
 
 
@@ -38,15 +38,15 @@ def game_iteration():
     Returns:
         Right answer for game.
     """
-    prog_length = random.randint(5, MAX_LENGTH)
-    prog_step = random.randint(1, MAX_STEP)
-    prog_start = random.randint(0, MAX_START)
-    prog_substitute = random.randint(0, prog_length - 1)
+    length = random.randint(5, MAX_LENGTH)
+    step = random.randint(1, MAX_STEP)
+    start = random.randint(0, MAX_START)
+    index_missing = random.randint(0, length - 1)
     progression = make_prog(
-        prog_start, prog_length, prog_step, prog_substitute,
+        start, length, step, index_missing,
     )
     print('Question: {0}'.format(progression))
-    return (prog_start + prog_substitute * prog_step)
+    return (start + index_missing * step)
 
 
 def play_progression():
