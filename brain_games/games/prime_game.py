@@ -2,7 +2,7 @@
 
 import random
 
-from brain_games.brain_engine import common_game
+from brain_games.brain_engine import play_game
 
 MAX_RANDOM_NUMBER = 50
 
@@ -28,8 +28,8 @@ def is_prime(number):
     return True
 
 
-def game_iteration():
-    """Game logic: question and right answer for the game.
+def iterate():
+    """Game logic for cycle: question and right answer for the game.
 
     Returns:
         Right answer for game.
@@ -43,4 +43,4 @@ def game_iteration():
 
 def play_prime():
     """Program for the brain-prime script."""
-    common_game(GAME_GOAL, game_iteration)
+    play_game(GAME_GOAL, iterate)
