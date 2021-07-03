@@ -9,6 +9,18 @@ MAX_RANDOM_NUMBER = 100
 GAME_GOAL = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
+def is_even(number):
+    """Define whether the number even or not.
+
+    Args:
+        number: Number for guessing by user.
+
+    Returns:
+        Answer whether number prime or not.
+    """
+    return (number % 2 == 0)
+
+
 def iterate():
     """Game logic for cycle: question and right answer for the game.
 
@@ -17,7 +29,9 @@ def iterate():
     """
     number = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0}'.format(str(number)))
-    return 'yes' if number % 2 == 0 else 'no'
+    if is_even(number) is True:
+        return 'yes'
+    return 'no'
 
 
 def play_even():
