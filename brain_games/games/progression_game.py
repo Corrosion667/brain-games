@@ -8,7 +8,7 @@ MAX_LENGTH = 10
 MAX_STEP = 10
 MAX_START = 20
 
-game_goal = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_GOAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def make_prog(prog_start, prog_length, prog_step, prog_substitute):
@@ -51,4 +51,4 @@ def game_iteration():
 
 def play_progression():
     """Program for the brain-progression script."""
-    common_game(game_goal, game_iteration)
+    common_game(GAME_GOAL, game_iteration)
