@@ -6,7 +6,7 @@ from brain_games.brain_engine import common_game
 
 REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 100
 
-game_goal = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_GOAL = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_iteration():
@@ -22,4 +22,4 @@ def game_iteration():
 
 def play_even():
     """Program for the brain-even script."""
-    common_game(game_goal, game_iteration)
+    common_game(GAME_GOAL, game_iteration)
