@@ -2,8 +2,6 @@
 
 import random
 
-from brain_games.brain_engine import common_game
-
 OPERATORS = ('+', '-', '*')
 MAX_RANDOM_NUMBER = 20
 
@@ -44,8 +42,3 @@ def game_iteration():
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0} {1} {2}'.format(str(num1), operator, str(num2)))
     return answer(operator, num1, num2)
-
-
-def play_calc():
-    """Program for the brain-calc script."""
-    common_game(GAME_GOAL, game_iteration)
