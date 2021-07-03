@@ -16,21 +16,6 @@ def welcome_user():
     return name
 
 
-def loose(users_answer, right_answer, name):
-    """Tell the player about loosing the game.
-
-    Args:
-        users_answer: An answer given by user.
-        right_answer: An answer which is meant to be correct.
-        name: Name of an user.
-    """
-    print(
-        f"'{users_answer}' is wrong answer ;(. "
-        + f"Correct answer was '{right_answer}'.\n"
-        + f"Let's try again, {name}!",
-    )
-
-
 def check_answer(users_answer, right_answer, name, attempt):
     """Compare answers and execute winnig or loosing scenario.
 
@@ -48,7 +33,11 @@ def check_answer(users_answer, right_answer, name, attempt):
         if attempt == ATTEMPTS:
             print('Congratulations, {0}!'.format(name))
     else:
-        loose(users_answer, right_answer, name)
+        print(
+            f"'{users_answer}' is wrong answer ;(. "
+            + f"Correct answer was '{right_answer}'.\n"
+            + f"Let's try again, {name}!",
+        )
         return 'loose'
 
 

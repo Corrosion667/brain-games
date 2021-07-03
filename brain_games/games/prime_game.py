@@ -9,21 +9,21 @@ MAX_RANDOM_NUMBER = 50
 GAME_GOAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def check_prime(task):
+def check_prime(number):
     """Define whether the number prime or not.
 
     Args:
-        task: Number for guessing by user.
+        number: Number for guessing by user.
 
     Returns:
         Answer whether number prime or not.
     """
-    if task < 2:
+    if number < 2:
         return 'no'
-    if task == 2:
+    if number == 2:
         return 'yes'
-    for each in range(2, task):
-        if task % each == 0:
+    for divider in range(2, number):
+        if number % divider == 0:
             return 'no'
     return 'yes'
 
@@ -34,9 +34,9 @@ def game_iteration():
     Returns:
         Right answer for game.
     """
-    task = random.randint(2, MAX_RANDOM_NUMBER)
-    print('Question: {0}'.format(str(task)))
-    return check_prime(task)
+    number = random.randint(2, MAX_RANDOM_NUMBER)
+    print('Question: {0}'.format(str(number)))
+    return check_prime(number)
 
 
 def play_prime():
