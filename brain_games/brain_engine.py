@@ -41,18 +41,18 @@ def check_answer(users_answer, right_answer, name, attempt):
         return 'loose'
 
 
-def common_game(game_goal, game_iteration):
+def play_game(game_goal, iterate):
     """Run a custom brain game.
 
     Args:
         game_goal: playing condition of a certain game.
-        game_iteration: Determine question and correct answer during the game.
+        iterate: Determine question and right answer during each round of game.
     """
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game_goal)
     for attempt in range(1, ATTEMPTS + 1):
-        right_answer = game_iteration()
+        right_answer = iterate()
         users_answer = prompt.string('Your answer: ')
         scenario = check_answer(users_answer, right_answer, name, attempt)
         if scenario == 'loose':
