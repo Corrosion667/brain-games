@@ -4,17 +4,17 @@ import random
 
 from brain_games.brain_engine import common_game
 
-OPERANDS = ('+', '-', '*')
+OPERATORS = ('+', '-', '*')
 REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 20
 
-game_goal = 'What is the result of the expression?.'
+GAME_GOAL = 'What is the result of the expression?.'
 
 
-def answer(operand, num1, num2):
+def answer(operator, num1, num2):
     """Calculate the right answer depending on the randomised operand.
 
     Args:
-        operand: Randomised one from operands list.
+        operator: Randomised one from operators list.
         num1: First randomised number in game.
         num2: Second randomised number in game.
 
@@ -24,11 +24,11 @@ def answer(operand, num1, num2):
     Raises:
         ValueError: if operand is unsupported.
     """
-    if operand == '+':
+    if operator == '+':
         return (num1 + num2)
-    elif operand == '-':
+    elif operator == '-':
         return (num1 - num2)
-    elif operand == '*':
+    elif operator == '*':
         return (num1 * num2)
     raise ValueError('unsupported operand')
 
@@ -39,13 +39,13 @@ def game_iteration():
     Returns:
         Right answer for game.
     """
-    operand = random.choice(OPERANDS)
+    operator = random.choice(OPERATORS)
     num1 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
     num2 = random.randint(0, REASONABLE_LIMIT_OF_MENTAL_COMPUTATION)
-    print('Question: {0} {1} {2}'.format(str(num1), operand, str(num2)))
-    return answer(operand, num1, num2)
+    print('Question: {0} {1} {2}'.format(str(num1), operator, str(num2)))
+    return answer(operator, num1, num2)
 
 
 def play_calc():
     """Program for the brain-calc script."""
-    common_game(game_goal, game_iteration)
+    common_game(GAME_GOAL, game_iteration)
