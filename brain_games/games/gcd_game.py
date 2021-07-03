@@ -2,14 +2,14 @@
 
 import random
 
-from brain_games.brain_engine import common_game
+from brain_games.brain_engine import play_game
 
 MAX_RANDOM_NUMBER = 50
 
 GAME_GOAL = 'Find the greatest common divisor of given numbers.'
 
 
-def gcd(num1, num2):
+def find_gcd(num1, num2):
     """Find the greatest common divider for two numbers.
 
     Args:
@@ -27,8 +27,8 @@ def gcd(num1, num2):
     return (num1 + num2)
 
 
-def game_iteration():
-    """Game logic: question and right answer for the game.
+def iterate():
+    """Game logic for cycle: question and right answer for the game.
 
     Returns:
         Right answer for game.
@@ -36,9 +36,9 @@ def game_iteration():
     num1 = random.randint(0, MAX_RANDOM_NUMBER)
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0} {1}'.format(str(num1), str(num2)))
-    return gcd(num1, num2)
+    return find_gcd(num1, num2)
 
 
 def play_gcd():
     """Program for the brain-gcd script."""
-    common_game(GAME_GOAL, game_iteration)
+    play_game(GAME_GOAL, iterate)
