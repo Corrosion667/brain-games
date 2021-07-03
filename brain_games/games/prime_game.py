@@ -6,7 +6,7 @@ from brain_games.brain_engine import common_game
 
 REASONABLE_LIMIT_OF_MENTAL_COMPUTATION = 50
 
-game_goal = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_GOAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_prime(task):
@@ -41,4 +41,4 @@ def game_iteration():
 
 def play_prime():
     """Program for the brain-prime script."""
-    common_game(game_goal, game_iteration)
+    common_game(GAME_GOAL, game_iteration)
