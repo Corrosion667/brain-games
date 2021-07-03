@@ -24,11 +24,11 @@ def make_prog(start, length, step, index_missing):
         Made progression.
     """
     progression = []
-    for element in range(length):
-        if element == index_missing:
+    for index in range(length):
+        if index == index_missing:
             progression.append('..')
             continue
-        progression.append(str(start + element * step))
+        progression.append(str(start + index * step))
     return ' '.join(progression)
 
 
