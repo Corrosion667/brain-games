@@ -9,5 +9,6 @@ def main():
     """Execute a mini-game."""
     play_game(GAME_GOAL, iterate)
 
+
 if __name__ == '__main__':
     main()
