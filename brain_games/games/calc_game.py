@@ -40,5 +40,5 @@ def iterate():
     operator = random.choice(OPERATORS)
     num1 = random.randint(0, MAX_RANDOM_NUMBER)
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
-    print('Question: {0} {1} {2}'.format(str(num1), operator, str(num2)))
-    return find_answer(operator, num1, num2)
+    question = '{0} {1} {2}'.format(str(num1), operator, str(num2))
+    return (find_answer(operator, num1, num2), question)
