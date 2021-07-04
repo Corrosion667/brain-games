@@ -33,5 +33,5 @@ def iterate():
     """
     num1 = random.randint(0, MAX_RANDOM_NUMBER)
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
-    print('Question: {0} {1}'.format(str(num1), str(num2)))
-    return find_gcd(num1, num2)
+    question = '{0} {1}'.format(str(num1), str(num2))
+    return (find_gcd(num1, num2), question)
