@@ -2,8 +2,6 @@
 
 import random
 
-from brain_games.brain_engine import play_game
-
 MAX_RANDOM_NUMBER = 50
 
 GAME_GOAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -39,8 +37,3 @@ def iterate():
     if is_prime(number) is True:
         return 'yes'
     return 'no'
-
-
-def play_prime():
-    """Program for the brain-prime script."""
-    play_game(GAME_GOAL, iterate)

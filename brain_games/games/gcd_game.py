@@ -2,8 +2,6 @@
 
 import random
 
-from brain_games.brain_engine import play_game
-
 MAX_RANDOM_NUMBER = 50
 
 GAME_GOAL = 'Find the greatest common divisor of given numbers.'
@@ -37,8 +35,3 @@ def iterate():
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
     print('Question: {0} {1}'.format(str(num1), str(num2)))
     return find_gcd(num1, num2)
-
-
-def play_gcd():
-    """Program for the brain-gcd script."""
-    play_game(GAME_GOAL, iterate)

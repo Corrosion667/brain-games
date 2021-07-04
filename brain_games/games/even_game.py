@@ -2,8 +2,6 @@
 
 import random
 
-from brain_games.brain_engine import play_game
-
 MAX_RANDOM_NUMBER = 100
 
 GAME_GOAL = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -32,8 +30,3 @@ def iterate():
     if is_even(number) is True:
         return 'yes'
     return 'no'
-
-
-def play_even():
-    """Program for the brain-even script."""
-    play_game(GAME_GOAL, iterate)

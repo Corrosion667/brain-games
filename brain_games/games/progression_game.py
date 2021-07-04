@@ -2,8 +2,6 @@
 
 import random
 
-from brain_games.brain_engine import play_game
-
 MAX_LENGTH = 10
 MAX_STEP = 10
 MAX_START = 20
@@ -47,8 +45,3 @@ def iterate():
     )
     print('Question: {0}'.format(progression))
     return (start + index_missing * step)
-
-
-def play_progression():
-    """Program for the brain-progression script."""
-    play_game(GAME_GOAL, iterate)
