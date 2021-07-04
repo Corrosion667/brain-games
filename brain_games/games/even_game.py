@@ -23,10 +23,10 @@ def iterate():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
-        Right answer for game.
+        Right answer for game and question.
     """
     number = random.randint(0, MAX_RANDOM_NUMBER)
-    print('Question: {0}'.format(str(number)))
+    question = '{0}'.format(str(number))
     if is_even(number) is True:
-        return 'yes'
-    return 'no'
+        return ('yes', question)
+    return ('no', question)
