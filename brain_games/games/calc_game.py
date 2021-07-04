@@ -35,7 +35,7 @@ def iterate():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
-        Right answer for game.
+        Right answer for game and question.
     """
     operator = random.choice(OPERATORS)
     num1 = random.randint(0, MAX_RANDOM_NUMBER)
