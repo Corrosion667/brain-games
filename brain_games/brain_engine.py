@@ -52,8 +52,9 @@ def play_game(game_goal, iterate):
     name = welcome_user()
     print(game_goal)
     for attempt in range(1, ATTEMPTS + 1):
-        right_answer = iterate()
+        task = iterate()
+        print('Question: {0}'.format(task[1]))
         users_answer = prompt.string('Your answer: ')
-        scenario = check_answer(users_answer, right_answer, name, attempt)
+        scenario = check_answer(users_answer, task[0], name, attempt)
         if scenario == 'loose':
             break
