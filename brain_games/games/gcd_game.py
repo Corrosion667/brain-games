@@ -29,7 +29,7 @@ def iterate():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
-        Right answer for game.
+        Right answer for game and question.
     """
     num1 = random.randint(0, MAX_RANDOM_NUMBER)
     num2 = random.randint(0, MAX_RANDOM_NUMBER)
