@@ -34,7 +34,7 @@ def iterate():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
-        Right answer for game.
+        Right answer for game and question.
     """
     length = random.randint(5, MAX_LENGTH)
     step = random.randint(1, MAX_STEP)
@@ -43,5 +43,4 @@ def iterate():
     progression = make_prog(
         start, length, step, index_missing,
     )
-    print('Question: {0}'.format(progression))
-    return (start + index_missing * step)
+    return ((start + index_missing * step), '{0}'.format(progression))
