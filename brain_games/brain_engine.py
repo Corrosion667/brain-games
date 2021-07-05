@@ -5,17 +5,6 @@ import prompt
 ATTEMPTS_COUNT = 3
 
 
-def welcome_user():
-    """Return name after asking it and greeting the user.
-
-    Returns:
-        Name of the user.
-    """
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
-    return name
-
-
 def play_game(game_goal, iterate):
     """Run a custom brain game.
 
@@ -24,7 +13,8 @@ def play_game(game_goal, iterate):
         iterate: Determine right answer and question during each round of game.
     """
     print('Welcome to the Brain Games!')
-    name = welcome_user()
+    name = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name))
     print(game_goal)
     for _ in range(0, ATTEMPTS_COUNT):
         right_answer, question = iterate()
