@@ -5,19 +5,19 @@ import prompt
 ATTEMPTS_COUNT = 3
 
 
-def play_game(game_goal, iterate):
+def play_game(game_goal, get_task):
     """Run a custom brain game.
 
     Args:
         game_goal: playing condition of a certain game.
-        iterate: Determine right answer and question during each round of game.
+        get_task: Determine right answer and question during each round of game.
     """
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
     print(game_goal)
     for _ in range(0, ATTEMPTS_COUNT):
-        right_answer, question = iterate()
+        right_answer, question = get_task()
         print('Question: {0}'.format(question))
         users_answer = prompt.string('Your answer: ')
         if str(right_answer) == users_answer:
