@@ -16,28 +16,6 @@ def welcome_user():
     return name
 
 
-def check_answer(users_answer, right_answer, name):
-    """Compare answers and execute winnig or loosing scenario.
-
-    Args:
-        users_answer: An answer given by user.
-        right_answer: An answer which is meant to be correct.
-        name: Name of the user.
-
-    Returns:
-        'Loose' to breake the gaming cycle.
-    """
-    if str(right_answer) == users_answer:
-        print('Correct!')
-    else:
-        print(
-            f"'{users_answer}' is wrong answer ;(. "
-            + f"Correct answer was '{right_answer}'.\n"
-            + f"Let's try again, {name}!",
-        )
-        return 'loose'
-
-
 def play_game(game_goal, iterate):
     """Run a custom brain game.
 
@@ -52,8 +30,14 @@ def play_game(game_goal, iterate):
         right_answer, question = iterate()
         print('Question: {0}'.format(question))
         users_answer = prompt.string('Your answer: ')
-        scenario = check_answer(users_answer, right_answer, name)
-        if scenario == 'loose':
+        if str(right_answer) == users_answer:
+            print('Correct!')
+        else:
+            print(
+                f"'{users_answer}' is wrong answer ;(. "
+                + f"Correct answer was '{right_answer}'.\n"
+                + f"Let's try again, {name}!",
+            )
             break
     else:
         print('Congratulations, {0}!'.format(name))
