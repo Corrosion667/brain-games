@@ -26,7 +26,7 @@ def iterate():
         Right answer for game and question.
     """
     number = random.randint(0, MAX_RANDOM_NUMBER)
-    question = '{0}'.format(str(number))
+    question = str(number)
     if is_even(number) is True:
         return ('yes', question)
     return ('no', question)
