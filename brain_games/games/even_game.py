@@ -27,6 +27,6 @@ def iterate():
     """
     number = random.randint(0, MAX_RANDOM_NUMBER)
     question = str(number)
-    if is_even(number) is True:
+    if is_even(number):
         return ('yes', question)
     return ('no', question)
