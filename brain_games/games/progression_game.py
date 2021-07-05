@@ -27,10 +27,10 @@ def make_progression(start, length, step, index_missing):
             progression.append('..')
             continue
         progression.append(str(start + index * step))
-    return ' '.join(progression)
+    return ((start + index_missing * step), ' '.join(progression))
 
 
-def iterate():
+def iterate():  # noqa: WPS210
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
@@ -40,7 +40,7 @@ def iterate():
     step = random.randint(1, MAX_STEP)
     start = random.randint(0, MAX_START)
     index_missing = random.randint(0, length - 1)
-    progression = make_progression(
+    right_answer, progression = make_progression(
         start, length, step, index_missing,
     )
-    return ((start + index_missing * step), '{0}'.format(progression))
+    return (right_answer, '{0}'.format(progression))
