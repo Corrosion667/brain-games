@@ -19,7 +19,7 @@ def is_even(number):
     return (number % 2 == 0)
 
 
-def iterate():
+def get_task():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
