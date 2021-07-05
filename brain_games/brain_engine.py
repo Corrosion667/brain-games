@@ -2,7 +2,7 @@
 
 import prompt
 
-ATTEMPTS = 3
+ATTEMPTS_COUNT = 3
 
 
 def welcome_user():
@@ -26,7 +26,7 @@ def play_game(game_goal, iterate):
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game_goal)
-    for _ in range(0, ATTEMPTS):
+    for _ in range(0, ATTEMPTS_COUNT):
         right_answer, question = iterate()
         print('Question: {0}'.format(question))
         users_answer = prompt.string('Your answer: ')
