@@ -25,7 +25,7 @@ def find_gcd(num1, num2):
     return (num1 + num2)
 
 
-def iterate():
+def get_task():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
