@@ -30,7 +30,7 @@ def make_progression(start, length, step, index_missing):
     return ((start + index_missing * step), ' '.join(progression))
 
 
-def iterate():  # noqa: WPS210
+def get_task():  # noqa: WPS210 6 variables here look ok
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
