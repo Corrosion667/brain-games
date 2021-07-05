@@ -34,6 +34,6 @@ def iterate():
     """
     number = random.randint(2, MAX_RANDOM_NUMBER)
     question = str(number)
-    if is_prime(number) is True:
+    if is_prime(number):
         return ('yes', question)
     return ('no', question)
