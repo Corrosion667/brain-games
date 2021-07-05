@@ -31,7 +31,7 @@ def find_answer(operator, num1, num2):
     raise ValueError('unsupported operand')
 
 
-def iterate():
+def get_task():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
