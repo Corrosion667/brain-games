@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""It's a mini-game where user have to find greatest common divisor ."""
+"""It's a mini-game where user have to find greatest common divisor."""
 
 from brain_games.brain_engine import play_game
 from brain_games.games.gcd_game import GAME_GOAL, iterate
