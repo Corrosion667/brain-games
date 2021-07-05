@@ -26,7 +26,7 @@ def is_prime(number):
     return True
 
 
-def iterate():
+def get_task():
     """Game logic for cycle: question and right answer for the game.
 
     Returns:
