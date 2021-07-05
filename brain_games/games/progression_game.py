@@ -9,7 +9,7 @@ MAX_START = 20
 GAME_GOAL = 'What number is missing in the progression?'
 
 
-def make_prog(start, length, step, index_missing):
+def make_progression(start, length, step, index_missing):
     """Create and return a progression to be guessed.
 
     Args:
@@ -40,7 +40,7 @@ def iterate():
     step = random.randint(1, MAX_STEP)
     start = random.randint(0, MAX_START)
     index_missing = random.randint(0, length - 1)
-    progression = make_prog(
+    progression = make_progression(
         start, length, step, index_missing,
     )
     return ((start + index_missing * step), '{0}'.format(progression))
