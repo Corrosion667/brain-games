@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "brain-games"
 version = "0.1.0"
 description = "This is a set of five console games built on the principle of popular mobile brain training applications."
 authors = ["Artem Nechai <lenikol95@mail.ru>"]
