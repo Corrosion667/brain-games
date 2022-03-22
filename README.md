@@ -1,6 +1,5 @@
 # Brain games
 
-[![Actions Status](https://github.com/Corrosion667/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Corrosion667/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/Corrosion667/python-project-lvl1)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 [![linter-check](https://github.com/Corrosion667/python-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/Corrosion667/python-project-lvl1/actions/workflows/linter-check.yml)
@@ -24,7 +23,7 @@ Welcome to the repository with a set of five console games built on the principl
 
 **Brain games** at the moment are stored only at *github* so the quickest and the easiest way to install them is to use *pip* with URL of repository.
 ```bash
-pip install git+HTTPS
+pip install git+https://github.com/Corrosion667/brain-games.git
 ```
 
 
